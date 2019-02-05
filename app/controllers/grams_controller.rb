@@ -12,9 +12,9 @@ class GramsController < ApplicationController
   end
 
 private 
-
-def gram_params
-  params.require(:gram).permit(:message)
-end
+ 
+  def gram_params
+    params.require(:gram).permit(:message)
+  end
 
 end
