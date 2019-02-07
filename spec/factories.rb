@@ -7,4 +7,9 @@ FactoryBot.define do
     add_attribute(:password) { 'secretPassword' }
     add_attribute(:password_confirmation) { 'secretPassword' }
   end
+
+  factory :gram do
+    add_attribute( :message) { 'hello' }
+    association :user
+  end
 end
