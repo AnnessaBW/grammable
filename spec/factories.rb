@@ -10,6 +10,8 @@ FactoryBot.define do
 
   factory :gram do
     add_attribute( :message) { 'hello' }
+    picture { fixture_file_upload(Rails.root.join('spec', 'fixtures', 'picture.png').to_s, 'image/png') }
+
     association :user
   end
 end
