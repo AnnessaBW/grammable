@@ -8,12 +8,12 @@
         </p>
 
         <div class="gram-actions float-right">
-      <% if current_user && current_user == gram.user %>
-        <%= link_to 'Edit', edit_gram_path(gram) %>
-        <%= link_to 'Destroy', gram_path(gram), method: :delete, data: {confirm: 'Are you sure?'} %>
+          <% if current_user && current_user == gram.user %>
+            <%= link_to 'Edit', edit_gram_path(gram) %>
+            <%= link_to 'Destroy', gram_path(gram), method: :delete, data: {confirm: 'Are you sure?'} %>
 
-      <% end %>
-    </div>
+          <% end %>
+        </div>
     <br class="clear-fix" />
     <div class="comments">
       <h3>Comments</h3>
